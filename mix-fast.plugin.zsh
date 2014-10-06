@@ -1,4 +1,4 @@
-_rake_refresh () {
+_mix_refresh () {
   if [ -f .mix_tasks ]; then
     rm .mix_tasks
   fi
@@ -26,5 +26,4 @@ _mix () {
 }
 
 compdef _mix mix
-alias mix_refresh='_mix
-_refresh'
+alias mix_refresh='_mix_refresh'
